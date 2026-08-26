@@ -7,9 +7,9 @@
     <meta name="description" content="FurNest — cage-free home boarding for dogs, birds & other small pets in Miyapur, Hyderabad. Plus loving day care for your plants while you're away.">
     
     <!-- External Google Typography Layers -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
@@ -35,7 +35,7 @@
             line-height: 1.6;
         }
 
-        /* Fixed Navigation Menu Layer */
+        /* Navigation Menu */
         nav {
             background-color: var(--surface-white);
             box-shadow: 0 2px 12px rgba(0,0,0,0.04);
@@ -87,7 +87,7 @@
             color: var(--primary-orange);
         }
 
-        /* Action Buttons Blocks */
+        /* Action Buttons */
         .btn {
             display: inline-block;
             padding: 12px 28px;
@@ -128,7 +128,7 @@
             opacity: 0.95;
         }
 
-        /* Hero Splash Banner Area */
+        /* Hero Banner */
         .hero-banner {
             padding: 90px 20px;
             text-align: center;
@@ -219,7 +219,7 @@
             font-size: 1.1rem;
         }
 
-        /* Feature Matrix (Services) */
+        /* Grid Display for Services */
         .matrix-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -258,7 +258,7 @@
             font-size: 0.95rem;
         }
 
-        /* Roadmap Layout (Promises) */
+        /* Promises Stack */
         .roadmap-stack {
             max-width: 800px;
             margin: 0 auto;
@@ -300,7 +300,7 @@
             color: var(--text-light);
         }
 
-        /* Review Grid Module */
+        /* Testimonials Masonry Layout */
         .testimonial-masonry {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -333,31 +333,30 @@
             letter-spacing: 0.3px;
         }
 
-        /* Site Base Footer */
+        /* Image Gallery Grid Elements */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-item {
+            background-color: #e2e8f0;
+            border-radius: 12px;
+            aspect-ratio: 1 / 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-align: center;
+            padding: 10px;
+            border: 1px dashed #cbd5e1;
+        }
+
+        /* Footer */
         footer {
             background-color: var(--brand-dark);
             color: var(--surface-white);
             text-align: center;
-            padding: 50px 20px;
-        }
-
-        footer p {
-            opacity: 0.7;
-            font-size: 0.95rem;
-        }
-
-        /* Responsiveness Adjustments */
-        @media (max-width: 768px) {
-            .nav-menu { display: none; }
-            .hero-banner h1 { font-size: 2.3rem; }
-            .action-flex { flex-direction: column; }
-            .btn { width: 100%; }
-            .roadmap-row { flex-direction: column; text-align: center; }
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Top Navigation System -->
-    <nav>
-        <div class="nav-container">
